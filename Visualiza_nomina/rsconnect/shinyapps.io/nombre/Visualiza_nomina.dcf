@@ -1,0 +1,12 @@
+name: Visualiza_nomina
+title: Visualiza_nomina
+username: nombre
+account: nombre
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 14958847
+bundleId: 10505920
+url: https://nombre.shinyapps.io/Visualiza_nomina/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
