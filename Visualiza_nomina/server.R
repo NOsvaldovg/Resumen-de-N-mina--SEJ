@@ -118,6 +118,7 @@ function(input, output, session) {
       
       df <- left_join(df, cat_plazas, "cat_sost") %>% 
         rename(funcion = FUNCION_SERV_DOCENTE_BASICA) %>% 
+        mutate(N_STATUS = ifelse(id_nivel == "EFJ", "ACTIVO", N_STATUS)) %>% 
         mutate(nivel_1 = case_when(
           id_nivel %in% c("ADG", "FAC", "FAM", "FEI") ~ "UNIDAD ADMINISTRATIVA",
           id_nivel %in% c("DBA", "EBA") ~ "EDUCACION PARA ADULTOS",
